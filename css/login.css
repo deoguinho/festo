@@ -1,0 +1,198 @@
+/* SCRIPT CSS DA PAGINA DE LOGIN DO SITE */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 170px;
+    margin-bottom: 30px;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login>h1 {
+    font-size: 3vw;
+    color: #37474f;
+}
+
+.left-login-image {
+    margin-left: 50px;
+    width: 35vw;
+}
+
+.left-login-image2 {
+    margin-left: 150px;
+    width: 45vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-login>h1 {
+    font-size: 3vw;
+    color: black;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login>h1 {
+    color: #EBB30E;
+    font-weight: 800px;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 20px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield>label {
+    color: #37474f;
+    margin-bottom: 10px;
+}
+
+.textfield>input::placeholder {
+    color: #455a64;
+}
+
+.volt {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.inputSubmit {
+    width: 90%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: white;
+    background: #ffc42c;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -8px #00000056;
+    transition: 0.4s;
+}
+
+.inputSubmit:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width:950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login>h1 {
+        display: none;
+    }
+
+    .right-login>h1 {
+        font-size: 3vh;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 50vw;
+    }
+
+    .card-login {
+        width: 90%;
+        height: 83%;
+    }
+}
+
+.titlelogo{
+    display: flex;
+}
+
+.logo {
+    margin-top: 12px;
+    margin-right: 20px;
+    width: 120px;
+}
+
+.logo2 {
+    margin-top: 12px;
+    margin-right: 10px;
+    width: 120px;
+}
+
+h2{
+    color: #EBB30E;
+}

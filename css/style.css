@@ -1,0 +1,346 @@
+/* Imports sempre na primeira linha */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* SCRIPT CSS DA PÁGINA HOME DO SITE */
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ececec;
+  text-align: center;
+  color: black;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Inicio Banner*/
+
+.banner {
+  position: relative;
+  /* width: 100vw; */
+  height: 25rem;
+  /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100vw;
+  height: auto;
+  filter: brightness(50%);
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+
+  /* Animação de gradiente */
+  background: linear-gradient(
+    to right,
+    #ffffff 20%,
+    #acacac 30%,
+    #acacac 70%,
+    #ffffff 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+.banner-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+@keyframes textShine
+
+/* Keyframe de animação de gradiente */ {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.btnveja {
+  /* Botao banner */
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(219, 219, 219);
+  transition: linear 0.15s;
+}
+
+.btnveja:hover {
+  color: white;
+  background-color: #ebb30e;
+}
+
+/* Fim Banner*/
+
+#hrtop {
+  opacity: 0%;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+#hrmain {
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+}
+
+.grid-container {
+  /* display: grid; QUANDO ACRESCENTAR OUTRAS OPÇÕES
+    grid-template-columns: repeat(6, auto); */
+  display: flex;
+  justify-content: center;
+  padding: 1.4rem;
+}
+
+.grid-item {
+  margin: 0;
+  width: 105px;
+  height: 100px;
+  /*     text-align: center; */
+}
+
+.grid-item a {
+  color: #000;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.15s linear;
+}
+
+.grid-item a:hover {
+  color: #818181;
+}
+
+.icons {
+  width: 4rem;
+}
+
+form {
+  margin: 0 12% 3% 12%;
+  color: #555;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 50px;
+  justify-content: space-between;
+}
+
+input[type="search"] {
+  width: 100%;
+  border: none;
+  background-color: white;
+  margin: 0;
+  padding: 12px 30px;
+  font-size: 16px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #474747;
+  border-color: #3b3b3b;
+  outline: none;
+}
+
+.latest-products {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.product {
+  display: inline-block;
+  margin: 10px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #bbb;
+  /* Add solid border style */
+  transition: transform 0.2s ease-in-out;
+  width: 220px;
+  /* Set a fixed width for consistent spacing */
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-title {
+  font-size: 18px;
+  /* Slightly larger font size */
+  margin-top: 10px;
+  /* Increased margin */
+  color: #333;
+}
+
+.product-description {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #666;
+}
+
+/* Add hover effect */
+.product:hover {
+  border: 2px solid #ebb30e;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /* Adjusted box shadow */
+}
+
+.prod-text {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prod-text a {
+  color: #ebb30e;
+  text-decoration: none;
+  transition: color 0.15s linear;
+  /* Clarified transition property */
+}
+
+.prod-text a:hover {
+  color: black;
+}
+
+.prod-text hr {
+  width: 80%;
+  /* Full width horizontal line */
+}
+
+.unselectable {
+  /* Classe para desabilitar selecao */
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* FOOTER */
+
+footer {
+  font-weight: 200;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: linear 0.2s;
+}
+
+a:hover {
+  color: #ff8a8a;
+  text-decoration: dotted;
+}
+
+.footer-section img {
+  max-width: 100px;
+}
+
+/* FOOTER */
+
+.contratar {
+  width: 100%;
+  height: 30px;
+  border: none;
+  background-color: #ebb30e;
+  border-radius: 5px;
+  color: #fff;
+}
+#prevBtn {
+  width: 25%;
+  height: 30px;
+  border: none;
+  background-color: #ebb30e;
+  border-radius: 5px;
+  color: #fff;
+}
+#nextBtn {
+  width: 25%;
+  height: 30px;
+  border: none;
+  background-color: #ebb30e;
+  border-radius: 5px;
+  color: #fff;
+}

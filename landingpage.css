@@ -1,0 +1,69 @@
+#comofunciona {
+  background-color: wheat;
+}
+.comofunciona {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+}
+
+.comofunciona img {
+  width: 500px;
+}
+
+.comofunciona_texto {
+  width: 50%;
+}
+.comofunciona p {
+  font-size: 14px;
+}
+
+.quemsomos_block{
+    display: flex;
+    justify-content: center;
+}
+
+.participante p{
+    font-size: 16px;
+    line-height: 0px;
+    font-weight: bold;
+}
+.participante span{
+    font-size: 14px;
+}
+
+.quemsomos_fotos{
+    display: flex;
+    flex-direction: column;
+    margin: 10px
+}
+.quemsomos_fotos img{
+    border-radius: 100%;
+    height: 175px;
+    width: 175px;
+}
+
+@media screen and (max-width: 425px) {
+    .comofunciona{
+        flex-direction: column;
+    }
+    .comofunciona img {
+        width: 50vw;
+    }
+    .quemsomos_block {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .quemsomos_block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .quemsomos_fotos {
+        margin: 41px;
+    }
+}

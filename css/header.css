@@ -1,0 +1,51 @@
+.header {
+    /* margin: 1rem 5rem 1rem 6rem; */
+    background-color: #ebb30e;
+
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5.5rem;
+    align-items: center;
+}
+
+
+.btnstop {
+    text-decoration: none;
+    margin-left: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: black;
+    transition: linear 0.15s;
+    font-size: 14px;
+}
+
+.btnstop:hover {
+    color: rgb(173, 173, 173);
+}
+
+.btnstopcadastro {
+    background-color: #b89324;
+    color: white;
+    border: none;
+}
+
+.btnstopcadastro:hover {
+    color: rgb(0, 0, 0);
+}
+
+#btnborder {
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.logo {
+    width: 8rem;
+    margin-bottom: 0.4rem;
+}
+
+@media screen and (max-width: 425px) {
+    /* criar menu hamburguer */
+}

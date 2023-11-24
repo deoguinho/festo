@@ -1,0 +1,47 @@
+<!-- SCRIPT DA CRIA??O DA TELA DE LOGIN -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Prestador</title>
+    <link rel="icon" type="image/x-icon" href="../assets/festo.ico">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <div class="titlelogo">
+                <a href="../index.html"><img class="logo" src="../assets/festoblacknobgLOGOTOP.png"></a>
+                <h2>Portal do prestador</h2>
+            </div>
+            <img src="../assets/loginprestador.svg" class="left-login-image" alt="PartyPros Planejamento">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Login</h1>
+                <form action="test-prest.php" method="POST">
+                    <div class="textfield">
+                        <label for="usuario">Email</label>
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                    </div>
+                    <a class="volt" href="../reset-senha/rst-prest.php">Esqueci minha senha</a>
+                    <input class="inputSubmit" type="submit" name="submit" value="Enviar">
+                    <a class="volt" href="../cadastro/escolha-cad.html">Ainda nao tem conta? Cadastre-se agora mesmo!</a>
+                    <hr>
+                    <a class="volt" href="../index.html">Voltar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

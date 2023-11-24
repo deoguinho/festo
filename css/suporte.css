@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #ececec;
+  }
+  
+  .top{
+    margin: 1.5% 3% 0 3%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  
+  #hrtop {
+    margin: 1rem 2rem;
+  }
+  
+  .selecione {
+    margin-top: 3%;
+  }
+  
+  .logo {
+    margin-left: 2rem;
+    width: 120px;
+  }
+  
+  /**/
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    min-width: 20rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+    max-height: 200px;
+
+  }
+
+  #message{
+    min-width: 20rem;
+  }
+  
+  button[type="submit"] {
+    border: 2px solid #EBB30E;
+    background-color: #ececec;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    transition: linear 0.15s;
+  }
+  
+  button[type="submit"]:hover {
+    color: #EBB30E;
+  }
+  
+  .btnstopcadastro {
+    margin-right: 2rem ;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    color: #EBB30E
+  }
+  
+  .btnstopcadastro:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  #btnborder {
+    border: 2px solid #EBB30E;
+    border-radius: 10px;
+    padding: 13px 20px 13px 20px;
+    transition: linear 0.15s;
+  }
+  
+  #btnborder:hover {
+    border: 2px solid #EBB30E;
+  }

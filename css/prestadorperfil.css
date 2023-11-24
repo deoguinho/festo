@@ -1,0 +1,60 @@
+#perfil {
+  display: flex;
+  text-align: start;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 50px;
+}
+
+#perfil img {
+  width: 10rem;
+  border-radius: 5rem;
+}
+
+.perfil_text {
+  line-height: 6px;
+  margin-left: 2rem;
+}
+
+.editar_perfil {
+  width: 8rem;
+  border: solid 1px #000;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.7rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.excluir_perfil {
+  width: 8rem;
+  border: none;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: red;
+  padding: 0.7rem;
+  text-decoration: none;
+  margin-left: 1rem;
+  color: white;
+}
+
+.servicos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: center;
+
+}
+
+.servicos_block {
+  border: solid 1px #ffdbdb;
+  margin-left: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.servicos_block img {
+  width: 16rem;
+}
